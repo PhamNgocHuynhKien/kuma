@@ -1,0 +1,42 @@
+@import '~src/styles.sass'
+.navbar-toggler
+    &:focus
+        outline: none
+.navbar
+    font-weight: bold
+    height: 60px
+    background: none !important
+    position: relative
+
+    
+.navbar-brand
+    color: white
+ 
+.nav-link
+    color: white !important
+       
+    
+.navbar-bg
+    background-color: $main-color-sc !important
+    &:hover
+        border-bottom: 1.5px solid $main-color-sc
+        background-color: white !important
+        .nav-link
+            color: $main-color-sc !important
+        .navbar-brand
+            color: $main-color-sc
+
+.navbar-bg2
+    background-color: none !important
+#carouselExampleIndicators
+    z-index: -1
+    margin-top: -58px
+.nav-item
+    margin-right: 20px
+    &:hover
+        background: $main-color-sc
+        
+        .nav-link
+            color: white !important
+            font-weight: normal
+        
