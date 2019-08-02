@@ -2,21 +2,37 @@
 .list-footer 
     list-style: none
     i
-        margin-right: 8px
+        margin-right: 12px
+        -webkit-animation: font-size 2s
+        &:hover
+            font-size: 30px
     li
+        font-weight: normal
         margin-top: 10px
         a 
-            color: black
+            color: white
+        &:first-child
+            font-weight: bold
+            font-size: 30px
+            margin-bottom: 20px
 #footer
+    background: #323232
+    color: white
     padding: 50px 80px
-    background-color: $main-color-th
+    
 .input-email
     input,
     button
         background: none
-        border: 1px solid black
-        padding: 9px 12px
+        border: 1px solid white
+        padding: 10px 10px
         font-size: 16px
+        color: white
+        i
+            font-size: 16px
+            -webkit-animation: font-size 1
+            &:hover
+                font-size: 22px
 
 .input-email
     input
@@ -24,6 +40,7 @@
         width: 70%
 #last-footer 
     @extend .list-footer
-    padding: 20px
-    background-color: #343A40
+    height: 60px
+    line-height: 60px
+    background-color: black
     color: white
