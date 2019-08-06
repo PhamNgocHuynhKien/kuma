@@ -11,13 +11,16 @@
     
 .navbar-brand
     color: white
+    &:hover
+        color: $main-color-sc
  
 .nav-link
     color: white !important
        
     
 .navbar-bg
-    background-color: $main-color-sc !important
+    // background: linear-gradient(to right, #7a2828, #a73737) !important
+    background:  $main-color-sc !important
     &:hover
         // border-bottom: 1.5px solid $main-color-sc
         background-color: white !important
@@ -28,14 +31,12 @@
 
 .navbar-bg2
     background-color: none !important
-#carouselExampleIndicators
-    z-index: -1
-    margin-top: -58px
+
 .nav-item
     margin-right: 30px
     // -webkit-transition: 2s
     &:hover
-        border: 1px solid $main-color-sc
+        border: 1.5px solid $main-color-sc
         .nav-link
             font-weight: normal
            
