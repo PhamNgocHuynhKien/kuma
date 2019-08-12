@@ -1,0 +1,79 @@
+<div class="banner-sub">
+    <h1>Product</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam laudantium veritatis, cumque</p>
+
+</div>
+<div style="text-align: center ; padding: 30px">Kuma house | product</div>
+<div class="container">
+    <div class="row" id="product">
+        <div class="aside col-3">
+
+            <div>
+                <p>Jacket</p>
+                <ul>
+                    <li>Jacket</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+                <p>Jean</p>
+                <ul>
+                    <li>Jean</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+                <p>Accessories</p>
+                <ul>
+                    <li>Accessories</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+            <div>
+                <p>Price</p>
+                    
+                    <input type="range" class="custom-range" id="customRange1" [(ngModel)]="gia" value="50" min="0" max="100">
+                    <label for="customRange1">${{gia}}</label>
+            </div>
+            <div >
+                <p>Size</p>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Small</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Medium</label>
+                </div>  
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">Large</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio4">X-Large</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-9" id="list product">
+            <div class="row">
+                <div class="col-4 show-product" *ngFor="let item of products">
+                    <div class="product-info">
+                        <img src="../../assets/image/eduardo-dutra-Is_jnQOc-EQ-unsplash.jpg" alt="" width="100%
+                        ">
+                        <div class="view">
+                            <button><i class="fas fa-shopping-cart"></i></button>
+                            <button>View</button>
+                            <button><i class="fas fa-search-plus"></i></button>
+                        </div>
+                        <div class="info-item">
+                            <p>{{item.loaiSp}}</p>
+                            <p>{{item.nameSp}}</p>
+                            <p>${{item.giaSp}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

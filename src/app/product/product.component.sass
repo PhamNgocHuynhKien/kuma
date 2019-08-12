@@ -1,0 +1,90 @@
+@import "~src/styles.sass"
+
+.banner-sub
+    z-index: -1
+    margin-top: -58px
+    height: 250px
+    background-image: url(../../assets/image/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg) 
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    text-align: center
+    padding-top: 90px
+    color: white 
+h1
+    font-weight: bold
+
+.aside
+    
+    p
+        font-weight: bold
+        background-color: #f2f2f2
+        padding: 10px 
+        margin-top: 20px
+        
+    ul
+        list-style: none
+        padding: 5px
+        li
+            padding: 10px
+            margin-left: 50px
+           
+            
+            &:hover
+                border-bottom: 1px solid black
+                font-weight: bold
+                background: #f2f2f2
+
+#product
+    padding: 50px 0 80px 0
+.show-product
+    margin: 20px 0
+.product-info
+    position: relative
+    &:hover
+        .view
+            display: block
+                
+        img
+            opacity: 0.2
+    .view
+        width: 100%
+        position: absolute
+        top: 35%
+        left: 0
+        text-align: center
+        display: none
+        button
+            background-color: white
+            border: 1px solid black
+            padding: 4px 10px
+            font-size: 80%
+            
+            &:nth-child(2)
+                background: black
+                color: white
+                padding: 4px 20px
+                margin: 0 4px
+                width: 80px
+             
+           
+    img
+        border-bottom: 1.5px solid black
+        opacity: 1
+        transition: opacity 0.5s
+        
+
+.info-item
+    p
+        margin-bottom: 0px 
+        margin-top: 3px
+        &:first-child
+            color: #cccccc
+            font-weight: lighter
+            font-size: 120%
+        &:nth-child(2)
+            font-size: 150%
+ 
+            
+    
