@@ -26,13 +26,21 @@
             <a class="nav-link" href="/about">About</a>
         </li>
       </ul>
-      <a class="navbar-brand " href="#"><i class="fas fa-user"></i> <i class="fas fa-cart-plus"></i></a>
+      <button class="navbar-brand" (click)="showSearchBar()"><i class="fas fa-search"></i></button>
+      <button class="navbar-brand " ><i class="fas fa-user"></i></button>
+      <button class="navbar-brand " ><i class="fas fa-cart-plus"></i></button>
       <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
     </div>
-    
+    <div id="search-bar" *ngIf="searchBar">
+      <p><button (click)="unshowSearchBar()"><i class="fas fa-times" ng></i></button></p>
+      <div style="border-bottom: 2px solid black; width: 40%; margin: 0 auto">
+        <input type="text" placeholder="What are you looking for ?">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
     
   </nav>
   <router-outlet></router-outlet>  

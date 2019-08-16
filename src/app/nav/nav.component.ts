@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   navh: any;
+  searchBar = false;
   constructor() { }
-
+  
   ngOnInit() {
     // console.log(navh);
     // var navh = document.getElementById("nav-menu").offsetTop;
@@ -17,7 +18,12 @@ export class NavComponent implements OnInit {
     // }
     window.addEventListener("scroll", this.myFunction);
   }
-
+  showSearchBar(){
+    this.searchBar = true;
+  }
+  unshowSearchBar(){
+    this.searchBar = false;
+  }
   myFunction() {
     console.log('ạdhakhdkad');
     this.navh = document.getElementById("nav-menu").offsetTop;
