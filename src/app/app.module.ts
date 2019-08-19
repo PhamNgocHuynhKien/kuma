@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+// import { RouterModule, Routes, Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,22 +15,23 @@ import { SaleComponent } from './sale/sale.component';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
 import { AboutComponent } from './about/about.component';
 import {FormsModule} from '@angular/forms';
-const appRoutes: Routes = [
-  { path: 'contact', component: ContactComponent },
-  { path: 'product', component: ProductComponent },
-  {
-    path: 'sale',
-    component: SaleComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: 'question', component:QAndAComponent},
-  { path: 'home', component: HomepageComponent},
-  { path: 'about', component: AboutComponent},
-  { path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-];
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+// const appRoutes: Routes = [
+//   { path: 'contact', component: ContactComponent },
+//   { path: 'product', component: ProductComponent },
+//   {
+//     path: 'sale',
+//     component: SaleComponent,
+//     data: { title: 'Heroes List' }
+//   },
+//   { path: 'question', component:QAndAComponent},
+//   { path: 'home', component: HomepageComponent},
+//   { path: 'about', component: AboutComponent},
+//   { path: '',
+//     redirectTo: 'home',
+//     pathMatch: 'full'
+//   },
+// ];
 
 @NgModule({
   declarations: [
@@ -46,13 +47,14 @@ const appRoutes: Routes = [
     ContactComponent,
     HomepageComponent,
     AboutComponent,
+    ProductDetailComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
